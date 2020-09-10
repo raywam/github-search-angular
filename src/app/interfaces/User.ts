@@ -7,5 +7,10 @@ export interface User {
   location: string,
   public_gists: string,
   public_repos: string,
-  followers: number
+  followers: number,
+  following: string,
+  id: number,
+  bio: string,
+  email: string,
+
 }

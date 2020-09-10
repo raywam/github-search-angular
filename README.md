@@ -26,7 +26,7 @@ Foi utilizada a versão 3, RESTful do Github:
 ### Observações
 
 * Foi utilizado design de fluxo de trabalho Git Flow, ao final do desenvolvimento foi realizado um pull request para mergear a branch master com a branch dev.
-* A aplicação está hospedada na [Netlify](https://distracted-haibt-cbf0c6.netlify.app/).
+* A aplicação está hospedada na [Netlify](https://distracted-jennings-eebd25.netlify.app/).
 * Utilização de guards em rotas.
 * Implementação de lazy loading.
 * Services para requests.
