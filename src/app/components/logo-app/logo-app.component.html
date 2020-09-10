@@ -1,8 +1,8 @@
-<a [routerLink]="['/']" class="Github-Search" [ngClass]="{ 'results': isResults }">
-  <span>
-    Github&nbsp;
+<a [routerLink]="['/']" class="logo">
+  <span class="Github-Search" [ngClass]="{ 'results': isResults }">
+    Github
   </span>
-  <span class="text-style-1">
+  <span class="text-style-1" [ngClass]="{ 'results': isResults }">
     Search
   </span>
 </a>

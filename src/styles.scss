@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Monaco;
+  src: url('./assets/fonts/Monaco.woff') format("woff"); 
+}
+
 :root {
   --lighter-purple: #ac53f2;
   --white: #ffffff;
