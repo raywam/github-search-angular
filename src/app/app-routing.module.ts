@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { ResultsComponent } from './pages/results/results.component';
+import { HomeRoutes } from './pages/home/home.routing';
+import { ResultsRoutes } from './pages/results/results.routing';
 
 const routes: Routes = [
   {
@@ -11,11 +11,11 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent
+    loadChildren: 'src/app/pages/home/home.module#HomeModule'
   },
   {
     path: 'results',
-    component: ResultsComponent
+    loadChildren: 'src/app/pages/results/results.module#ResultsModule'
   },
   {
     path: '**',

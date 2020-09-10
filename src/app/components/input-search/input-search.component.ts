@@ -8,12 +8,16 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class InputSearchComponent implements OnInit {
 
   @Output() getUserEmmiter = new EventEmitter<string>();
+  @Input() username?: string;
 
   value: string = '';
 
   constructor() { }
 
   ngOnInit() {
+    if (this.username) {
+      this.value = this.username;
+    }
   }
 
   handleSubmit() {

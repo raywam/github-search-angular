@@ -26,14 +26,11 @@ export class ResultsComponent implements OnInit {
     private router: Router,
     private activatedRoute: ActivatedRoute
   ) {
-    console.log('constructor');
   }
 
   ngOnInit() {
-    console.log('ngOnInit');
     this.activatedRoute.queryParams.subscribe(params => {
       this.username = params['user'];
-      console.log(this.username);
       this.getUser(this.username);
     });
   }

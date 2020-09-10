@@ -3,11 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeModule } from './pages/home/home.module';
-import { ResultsModule } from './pages/results/results.module';
-import { ComponentsModule } from './components/components.module';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,9 +12,6 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule,
-    ResultsModule,
-    ComponentsModule,
     HttpClientModule
   ],
   providers: [],
