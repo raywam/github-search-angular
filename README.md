@@ -1,27 +1,42 @@
-# GithubSearchAngular
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
 
-## Development server
+## Desafio Concrete - Raywam Shinkoda
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Implementação de uma aplicação client-side, que consulta a API do GitHub e mostra os repositórios de um determinado usuário.
 
-## Code scaffolding
+### GitHub API v3 (RESTful)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Foi utilizada a versão 3, RESTful do Github:
 
-## Build
+* Detalhes de um usuário: https://api.github.com/users/{username}
+* Repositórios de um usuário: https://api.github.com/users/{username}/repos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Requisitos atendidos:
 
-## Running unit tests
+* Eu, como usuário, desejo buscar por um usuário do GitHub;
+* Eu, como usuário, desejo ver os detalhes desse usuário que foi buscado (número de seguidores, número de seguidos, imagem do avatar, e-mail e bio);
+* Eu, como usuário, desejo ver a listagem dos repositórios desse usuário que foi buscado, ordenados pelo número decrescente de estrelas;
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Definição de pronto
 
-## Running end-to-end tests
+* O layout foi implementado de acordo com a especificação do Zeplin.io
+* Nessa aplicação foi utilizada o framework `Angular 7`.
+* Uso de rotas.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Observações
 
-## Further help
+* Foi utilizado design de fluxo de trabalho Git Flow, ao final do desenvolvimento foi realizado um pull request para mergear a branch master com a branch dev.
+* A aplicação está hospedada na [Netlify](https://distracted-jennings-eebd25.netlify.app/).
+* Utilização de guards em rotas.
+* Implementação de lazy loading.
+* Services para requests.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Testes Unitários
+
+* Foi utilizado o test runner Karma, já vinculado ao Angular 7.
+* Todos os componentes possuem teste para verificar se é renderizado corretamente.
+* Além de:
+
+### Results.component.spec.ts
+
+* Para verificação se a função `orderByStargazers` ordena os repositories descrecentemente.

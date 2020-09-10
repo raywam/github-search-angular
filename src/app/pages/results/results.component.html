@@ -3,7 +3,7 @@
     <app-logo-app [isResults]="true"></app-logo-app>
   </div>
   <div>
-    <app-input-search (getUserEmmiter)="submit($event)"></app-input-search>
+    <app-input-search (getUserEmmiter)="submit($event)" [username]="username"></app-input-search>
   </div>
 
   <ng-template [ngIf]="user && !loading">

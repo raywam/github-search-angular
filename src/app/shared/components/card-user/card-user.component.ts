@@ -13,7 +13,6 @@ export class CardUserComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.userData);
   }
 
 }

@@ -13,7 +13,6 @@ export class CardRepositoryComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.repos);
   }
 
 }
