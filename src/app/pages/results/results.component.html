@@ -1,0 +1,35 @@
+<div class="Results-page">
+  <div class="grid-item">
+    <app-logo-app [isResults]="true"></app-logo-app>
+  </div>
+  <div>
+    <app-input-search (getUserEmmiter)="submit($event)"></app-input-search>
+  </div>
+
+  <ng-template [ngIf]="user && !loading">
+    <div class="grid-item">
+      <app-card-user [userData]="user"></app-card-user>
+    </div>
+    <div class="grid-item" *ngIf="repos?.length > 0">
+      <app-card-repository [repos]="repos"></app-card-repository>
+    </div>
+    <div class="grid-item" *ngIf="repos?.length === 0">
+      <span class="Not-found-message">This organization has no public repositories.</span>
+    </div>
+  </ng-template>
+
+  <ng-template [ngIf]="!user && !loading">
+    <div class="grid-item"></div>
+    <div class="grid-item">
+      <span class="Not-found-message">User not found :(</span>
+    </div>
+  </ng-template>
+
+  <ng-template [ngIf]="loading">
+    <div class="grid-item"></div>
+    <div class="grid-item">
+      <span class="Not-found-message">Searching...</span>
+    </div>
+  </ng-template>
+
+</div>

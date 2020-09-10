@@ -1,0 +1,31 @@
+.Github-Search {
+  width: 745px;
+  height: 81px;
+
+  font-family: Monaco;
+  font-size: 60px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  
+  text-align: center;
+
+  color: var(--black);
+
+  text-decoration: none;
+
+  .text-style-1 {
+    font-family: Raleway;
+    font-weight: 200;
+    font-style: italic;
+  }
+}
+
+.results {
+  width: 280px !important; 
+  height: 50px !important;
+  text-align: left !important;
+  font-size: 40px !important;
+}

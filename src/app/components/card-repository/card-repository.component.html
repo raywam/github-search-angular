@@ -1,0 +1,17 @@
+<div *ngIf="repos?.length > 0">
+  <div *ngFor="let repo of repos">
+    <div class="Card-repository">
+      <a class="repo-name" target="_blank" rel="noopener noreferrer" [href]="repo.svn_url">{{repo.name}}</a>
+
+      <div class="repo-description">
+        {{repo.description}}
+      </div>
+      <div class="star">
+        <img src='../../../assets/icons/star-icon.svg' class="star-icon" alt="Icone de Estrela" />
+        <div class="star-count">
+          {{repo.stargazers_count}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

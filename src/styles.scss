@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --lighter-purple: #ac53f2;
+  --white: #ffffff;
+  --black: #000000;
+  --black-40: rgba(0, 0, 0, 0.4);
+
+  font-size: 70%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--lighter-purple);
+  border: 0px none var(--white);
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  transition: 1s;
+  background: var(--black-40);
+}
+::-webkit-scrollbar-thumb:active {
+  background: var(--black-40);
+}
+::-webkit-scrollbar-track {
+  background: var(--white);
+  border: 0px none var(--white);
+  border-radius: 15px;
+}
+::-webkit-scrollbar-track:hover {
+  transition: 1s;
+  background: var(--black-40);
+}
+::-webkit-scrollbar-track:active {
+  background: var(--black);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+

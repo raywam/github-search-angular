@@ -1,0 +1,31 @@
+<div class="Card-user" *ngIf="userData">
+  <img class="user-avatar" src="{{userData.avatar_url}}" alt="Foto do Perfil" />
+  <br />
+  <a class="user-name" target="_blank" rel="noopener noreferrer" href="{{userData.html_url}}">{{userData.name}}</a>
+  <div class="user-login">
+    {{userData.login || '-'}}
+  </div>
+
+  <div class="Details">
+    <div class="Git-details">
+      <img src="../../../assets/icons/organization-icon.svg" class="Git-details-icon" alt="Icone de Organização" />
+      <span class="Git-details-value">{{userData.company || '-'}}</span>
+    </div>
+    <div class="Git-details">
+      <img src="../../../assets/icons/location-icon.svg" class="Git-details-icon" alt="Icone de Localização" />
+      <span class="Git-details-value">{{userData.location || '-'}}</span>
+    </div>
+    <div class="Git-details">
+      <img src="../../../assets/icons/star-icon.svg" class="Git-details-icon" alt="Icone de Estrela" />
+      <span class="Git-details-value">{{userData.public_gists || '-'}}</span>
+    </div>
+    <div class="Git-details">
+      <img src="../../../assets/icons/repositorie-icon.svg" class="Git-details-icon" alt="Icone de Repository" />
+      <span class="Git-details-value">{{userData.public_repos || '-'}}</span>
+    </div>
+    <div class="Git-details">
+      <img src="../../../assets/icons/followers-icon.svg" class="Git-details-icon" alt="Icone de Followers" />
+      <span class="Git-details-value">{{userData.followers || '-'}}</span>
+    </div>
+  </div>
+</div>
