@@ -39,4 +39,4 @@ Foi utilizada a versão 3, RESTful do Github:
 
 ### Results.component.spec.ts
 
-* Para verificação se a função `orderByStargazers` ordena os repositories descrecentemente.
+* Para verificação se a função `orderByStargazers` ordena os repositories decrecentemente.
